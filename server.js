@@ -13,11 +13,11 @@ app.post("/products", (req, res) => {
   res.send("Add a product");
 });
 
-app.put("/products", (req, res) => {
+app.put("/products/:id", (req, res) => {
   res.send("Update a product");
 });
 
-app.delete("/products", (req, res) => {
+app.delete("/products/:id", (req, res) => {
   res.send("Delete a product");
 });
 
